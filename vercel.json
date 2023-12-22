@@ -10,8 +10,5 @@
       "src": "/(.*)",
       "dest": "main.py"
     }
-  ],
-  "config": {
-    "python": "3.10"
-  }
+  ]
 }
