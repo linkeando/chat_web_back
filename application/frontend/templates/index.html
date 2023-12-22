@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3 fixed-top mb-3 navbar-transitions">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Clínica Dental RG</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto text-center"> <!-- Centra los enlaces -->
+                <li class="nav-item">
+                    <a class="nav-link mx-2 active" aria-current="page" href="#inicio">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#caracteristicas">Instalaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#testimonios">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav"> <!-- Botones en el lado derecho -->
+                <li class="nav-item">
+                    <button id="registroButton" class="btn btn-info mx-2 mb-2">Registro</button>
+                </li>
+                <li class="nav-item">
+                    <button id="loginButton" class="btn btn-success mx-2 mb-2">Login</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--Hero-->
+<main>
+    <div class="container col-xxl-8 px-4 py-5" id="inicio">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="{{ url_for('static', filename='images/hero.png') }}" class="d-block mx-lg-auto img-fluid"
+                     alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Nuestra Clinica Integral</h1>
+                <p class="lead">Una Boca Sana, Una Vida Feliz.
+                    José Ricardo Gómez Gómez</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="py-5" id="caracteristicas">
+    <h2 class="text-center mb-4">Nuestros Servicios</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for ('static', filename='images/implant.png')}} " class="card-img-top"
+                         alt="Imagen 1">
+                    <div class="card-body text-center">
+                        <i class="fas fa-cogs fa-4x mb-4"></i>
+                        <h2 class="card-title">Feature 1</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida
+                            nibh vel velit auctor aliquet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for ('static', filename='images/implant.png')}} " class="card-img-top"
+                         alt="Imagen 2">
+                    <div class="card-body text-center">
+                        <i class="fas fa-chart-bar fa-4x mb-4"></i>
+                        <h2 class="card-title">Feature 2</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida
+                            nibh vel velit auctor aliquet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for ('static', filename='images/implant.png')}} " class="card-img-top"
+                         alt="Imagen 3">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-4x mb-4"></i>
+                        <h2 class="card-title">Feature 3</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida
+                            nibh vel velit auctor aliquet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for ('static', filename='images/implant.png')}} " class="card-img-top"
+                         alt="Imagen 3">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-4x mb-4"></i>
+                        <h2 class="card-title">Feature 3</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida
+                            nibh vel velit auctor aliquet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for ('static', filename='images/implant.png')}} " class="card-img-top"
+                         alt="Imagen 3">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-4x mb-4"></i>
+                        <h2 class="card-title">Feature 3</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida
+                            nibh vel velit auctor aliquet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for ('static', filename='images/implant.png')}} " class="card-img-top"
+                         alt="Imagen 3">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-4x mb-4"></i>
+                        <h2 class="card-title">Feature 3</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida
+                            nibh vel velit auctor aliquet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
