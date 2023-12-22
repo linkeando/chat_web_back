@@ -12,8 +12,7 @@ def message_answer():
     data = request.get_json()
     message_user = data['message']['content']
     message = Message(sender="Bot", content=message_user, hour=datetime.now().strftime('%I:%M %p'))
-    answer = message.answer_bot()
-    message.content = answer
+    message.content = 'enviado del servidor'
     return jsonify(message.to_json()), 200
 
 

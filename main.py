@@ -7,5 +7,4 @@ app = FlaskApp().create_app()
 route_manager = RouteManager(app, "application.backend.routes").register_routes()
 
 if __name__ == '__main__':
-    print('entro')
     serve(app, host='0.0.0.0', port=3000)
